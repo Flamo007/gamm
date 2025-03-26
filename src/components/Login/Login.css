@@ -1,0 +1,49 @@
+@import '../../components/Colors.css';
+
+.login-container {
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 300px;
+  background-color: var(--card-bg); /* Mörkgrå */
+  color: var(--text-color); /* Vit text */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+}
+
+.login-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.login-button {
+  padding: 10px 20px;
+  background-color: var(--button-secondary); /* Blå */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.login-button:hover {
+  background-color: var(--button-secondary-hover); /* Mörkare blå */
+}
+
+.login-message {
+  margin-top: 10px;
+  color: #28a745;
+}
+
+.login-error {
+  margin-top: 10px;
+  color: #ff4d4d;
+}

@@ -1,0 +1,15 @@
+.player-profile {
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  max-width: 300px;
+}
+
+.player-profile h2 {
+  margin: 0 0 8px;
+}
+
+.player-profile p {
+  margin: 4px 0;
+}

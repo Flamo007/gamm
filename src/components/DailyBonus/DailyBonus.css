@@ -1,0 +1,26 @@
+@import '../../components/Colors.css';
+
+.daily-bonus {
+  text-align: center;
+  margin: 20px;
+}
+
+.daily-bonus-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: var(--button-primary); /* Grön */
+  color: var(--text-color); /* Vit text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.daily-bonus-button:disabled {
+  background-color: var(--text-muted); /* Ljusgrå */
+  cursor: not-allowed;
+}
+
+.daily-bonus-button:hover:not(:disabled) {
+  background-color: var(--button-primary-hover); /* Mörkare grön */
+}

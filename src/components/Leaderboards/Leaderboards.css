@@ -1,0 +1,42 @@
+@import '../../components/Colors.css';
+
+.leaderboards {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: var(--card-bg); /* Mörkgrå */
+  color: var(--text-color); /* Vit text */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.leaderboards h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.leaderboards table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.leaderboards th,
+.leaderboards td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.leaderboards th {
+  background-color: var(--button-secondary); /* Blå */
+  color: white;
+}
+
+.leaderboards tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.leaderboards tr:hover {
+  background-color: var(--card-hover); /* Ljusare blå */
+}

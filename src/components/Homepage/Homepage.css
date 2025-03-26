@@ -1,0 +1,134 @@
+@import '../../components/Colors.css';
+
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-color); /* Mörk marinblå */
+  color: var(--text-color); /* Vit text */
+}
+
+.homepage {
+  padding: 20px;
+  background-color: var(--background-color); /* Säkerställ att bakgrunden är mörk */
+}
+
+/* Ta bort .top-menu och dess relaterade stilar */
+
+.hero {
+  text-align: center;
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  padding: 50px 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background-color: var(--primary-color); /* Tropisk orange */
+  color: var(--text-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: var(--button-hover); /* Ljusare orange */
+  transform: scale(1.05);
+}
+
+.featured-games {
+  margin-bottom: 30px;
+}
+
+.featured-games h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--accent-color);
+}
+
+.no-games {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--accent-color);
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.game-card {
+  background-color: var(--secondary-color);
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  color: var(--text-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+}
+
+.game-card img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.play-button {
+  padding: 10px 20px;
+  background-color: #4caf50; /* Grön färg för knappen */
+  color: #ffffff; /* Vit text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.play-button:hover {
+  background-color: #45a049; /* Mörkare grön vid hover */
+  transform: scale(1.05);
+}
+
+.footer {
+  text-align: center;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer ul li a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  text-decoration: underline;
+}

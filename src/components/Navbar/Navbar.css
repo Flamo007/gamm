@@ -1,0 +1,134 @@
+@import '../../components/Colors.css';
+
+/* Grundläggande styling för navbar */
+.navbar {
+  width: 100%;
+  background-color: var(--secondary-color); /* Djup lila */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logotypen */
+.navbar-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--accent-color); /* Solgul */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navbar-logo:hover {
+  color: var(--button-hover); /* Ljusare orange */
+}
+
+/* Länkar i navbaren */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  display: inline-block;
+}
+
+.navbar-links li a {
+  color: var(--text-color); /* Vit text */
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+  background-color: var(--button-hover); /* Ljusare orange */
+  color: #ffffff;
+}
+
+/* Responsiv design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-links li a {
+    width: 100%;
+  }
+}
+
+/* Dropdown-meny (om du vill lägga till fler funktioner) */
+.navbar-dropdown {
+  position: relative;
+}
+
+.navbar-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1e40af; /* Mörkare blå för dropdown */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.navbar-dropdown:hover .navbar-dropdown-content {
+  display: block;
+}
+
+.navbar-dropdown-content a {
+  display: block;
+  padding: 10px 15px;
+  color: #e0f2fe; /* Ljusare textfärg */
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-dropdown-content a:hover {
+  background-color: #2563eb; /* Mjukare blå hover-effekt */
+}
+
+/* Top-menu styling */
+.top-menu {
+  display: flex;
+  justify-content: center;
+  background-color: #1e3a8a; /* Matchar navbarens bakgrund */
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.top-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.top-menu li button {
+  background: none;
+  border: none;
+  color: #e0f2fe; /* Ljusare textfärg */
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.top-menu li button:hover {
+  color: #60a5fa; /* Ljusblå hover-effekt */
+}

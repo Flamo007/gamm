@@ -1,0 +1,36 @@
+:root {
+  /* === Primära färger === */
+  --primary-color: #217f9a; /* Huvudfärg (t.ex. knappar, viktiga element) */
+  --secondary-color: #2e2b5f; /* Sekundär färg (t.ex. bakgrund för navbar) */
+  --accent-color: #272157; /* Accentfärg (t.ex. rubriker, viktiga detaljer) */
+
+  /* === Bakgrundsfärger === */
+  --background-color: #1a1a2e; /* Huvudbakgrundsfärg */
+  --card-bg: #1e1e1e; /* Bakgrund för kort */
+  --footer-bg: #121212; /* Bakgrund för footer */
+  --modal-bg: rgba(0, 0, 0, 0.8); /* Bakgrund för modaler */
+
+  /* === Textfärger === */
+  --text-color: #ffffff; /* Standardtextfärg */
+  --text-muted: #b0b0b0; /* Ljusgrå text (t.ex. för mindre viktig text) */
+  --text-accent: #ffd700; /* Accentfärg för text (t.ex. viktiga meddelanden) */
+
+  /* === Knappar === */
+  --button-primary: #4caf50; /* Grön för primära knappar */
+  --button-primary-hover: #45a049; /* Mörkare grön vid hover */
+  --button-secondary: #007bff; /* Blå för sekundära knappar */
+  --button-secondary-hover: #0056b3; /* Mörkare blå vid hover */
+  --button-danger: #ff4d4d; /* Röd för farliga åtgärder */
+  --button-danger-hover: #e60000; /* Mörkare röd vid hover */
+
+  /* === Hover-effekter === */
+  --button-hover: #ff6347; /* Ljusare tropisk orange */
+  --card-hover: #2563eb; /* Ljusare blå för kort */
+  --link-hover: #60a5fa; /* Ljusblå för länkar vid hover */
+
+  /* === Andra färger === */
+  --error-color: #ff0000; /* Röd för felmeddelanden */
+  --success-color: #00c853; /* Grön för framgångsmeddelanden */
+  --warning-color: #ffc107; /* Gul för varningar */
+  --info-color: #17a2b8; /* Blå för informationsmeddelanden */
+}

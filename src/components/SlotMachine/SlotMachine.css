@@ -1,0 +1,182 @@
+@import '../../components/Colors.css';
+
+.slot-machine {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--background-color); /* Mörk marinblå */
+  color: var(--text-color); /* Vit text */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: var(--accent-color); /* Solgul */
+}
+
+header p {
+  font-size: 1.2rem;
+  color: var(--text-muted); /* Ljusgrå */
+}
+
+.balance-section {
+  background-color: var(--card-bg); /* Mörkgrå */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: left;
+}
+
+.balance-section h3 {
+  margin: 0 0 10px;
+  color: var(--text-color);
+}
+
+.balance-section p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: var(--text-muted);
+}
+
+input[type="range"] {
+  width: 100%;
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.balance {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: var(--text-accent); /* Solgul */
+}
+
+.reels {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.reel-row {
+  overflow: hidden;
+  height: 60px; /* Höjden på en symbol */
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--secondary-color); /* Djup lila */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.reel {
+  width: 100%;
+  height: 60px; /* Höjden på en symbol */
+  font-size: 2rem;
+  color: var(--text-accent); /* Solgul */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinning .reel {
+  animation: spin 0.5s linear infinite;
+}
+
+.spin-button {
+  padding: 10px 20px;
+  background-color: var(--primary-color); /* Tropisk orange */
+  color: var(--text-color); /* Vit text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.spin-button:hover {
+  background-color: var(--button-hover); /* Ljusare orange */
+}
+
+.spin-button:disabled {
+  background-color: var(--text-muted); /* Ljusgrå */
+  cursor: not-allowed;
+}
+
+.reset-button {
+  background-color: var(--button-secondary); /* Blå */
+  color: var(--text-color); /* Vit text */
+  margin-top: 10px;
+}
+
+.reset-button:hover {
+  background-color: var(--button-secondary-hover); /* Mörkare blå */
+}
+
+.challenge-button {
+  background-color: var(--button-secondary); /* Blå */
+  color: var(--text-color); /* Vit text */
+  margin-top: 10px;
+}
+
+.challenge-button:hover {
+  background-color: var(--button-secondary-hover); /* Mörkare blå */
+}
+
+.message {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: var(--text-muted); /* Ljusgrå */
+}
+
+@keyframes spin {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.leaderboard {
+  background-color: var(--card-bg); /* Mörkgrå */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: left;
+}
+
+.leaderboard h3 {
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.leaderboard ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.leaderboard li {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: var(--text-muted);
+}

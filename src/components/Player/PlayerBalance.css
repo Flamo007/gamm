@@ -1,0 +1,18 @@
+.player-balance {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.player-balance h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.player-balance p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
